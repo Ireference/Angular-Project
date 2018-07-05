@@ -18,7 +18,7 @@
 
 <body>
   <div class="container" ng-controller="listadoCtrl">
-    <h1>Libro de Ruta</h1>
+    <h1>LISTA DE CARGA POR RUTA</h1>
     <h4>{{ "MediaAgility" }}</h4>
 
     <!-- FILTROS -->
@@ -31,79 +31,54 @@
 
     <table class="table table-striped">
       <td nowrap class="titulo" colspan="5">
-        <h4>INFORME DE REPARTO POR ZONA</h4>
+      
       <tr>
-        <th>Totales por tipo de documento</th>
-        <th colspan="4"></th>
+        <th colspan="8"></th>
+        <th colspan="2">Pagina: {{}}</th>
       </tr>
       <tr>
-        <th>Tipo</th>
-        <th>#doctos</th>
-        <th>Importe</th>
+        <th colspan="8"></th>
+        <th colspan="2">Fecha: {{}}</th>
+      </tr>
+      <tr>
+        <th colspan="8"></th>
+        <th colspan="2">Hora: {{}}</th>
+      </tr>
+      <tr>
+        <th colspan="4">Numero de Entrega: {{}}</th>
+        <th colspan="4">Mensaje de Abastecimiento: {{}}</th>
         <th colspan="2"></th>
       </tr>
       <tr>
-        <th>Pedido</th>
-        <th>{{}}</th>
-        <th>{{ | currency}}</th>
+        <th colspan="4">Almacen: {{}}</th>
+        <th colspan="4">Solicitud de abastecimiento: {{}}</th>
         <th colspan="2"></th>
       </tr>
       <tr>
-        <th>Devols</th>
-        <th>{{}}</th>
-        <th>{{ | currency}}</th>
+        <th colspan="4">Codigo de Ruta: {{}}</th>
+        <th colspan="4">Sector de Reparto: {{}}</th>
         <th colspan="2"></th>
       </tr>
-      <td></td>
       <tr>
-        <th>Totales por tipo de preventa</th>
-        <th colspan="4"></th>
+        <th colspan="4">Peso Bruto: {{}}</th>
+        <th colspan="4">Descripcion de la Ruta: {{}}</th>
+        <th colspan="2"></th>
       </tr>
       <tr>
-        <th>Preventa</th>
-        <th>#doctos</th>
-        <th>#clientes</th>
-        <th>Importe</th>
-        <th colspan="1"></th>
+        <th colspan="4">Peso Neto: {{}}</th>
+        <th colspan="6"></th>
       </tr>
       <tr>
-        <th>{{}}</th>
-        <th>{{}}</th>
-        <th>{{}}</th>
-        <th>{{}}</th>
-        <th colspan="1"></th>
+        <th rowspan="2">Nº</th>
+        <th rowspan="2">MAterial</th>
+        <th rowspan="2">Descripcion del Material</th>
+        <th rowspan="2">Cant/CJ</th>
+        <th rowspan="2" colspan="3">Unidades de Carga</th>
+        <th rowspan="2">Peso Bruto</th>
+        <th rowspan="2">Peso Neto</th>
+        <th rowspan="2">Precio VEF</th>
       </tr>
-      <tr>
-        <th>{{}}</th>
-        <th>{{}}</th>
-        <th>{{}}</th>
-        <th>{{}}</th>
-        <th colspan="1"></th>
-      </tr>
-      <tr>
-        <th></th>
-        <th>{{1}}</th>
-        <th>{{1}}</th>
-        <th>{{ | currency}}</th>
-        <th colspan="1"></th>
-      </tr>
-      <tr>
-        <th>TOTAL</th>
-        <th>{{}}</th>
-        <th>{{}}</th>
-        <th>{{ | currency}}</th>
-      </tr>
-      <td></td>
-      <tr>
-        <th>Totales del viaje: {{}}</th>
-        <th colspan="4"></th>
-      </tr>
-      <tr>
-        <th colspan="2">Producto</th>
-        <th>Checkout</th>
-        <th>Asig. Pedidos</th>
-        <th>Extra</th>
-      </tr>
+      
         
 
     </table>

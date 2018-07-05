@@ -29,49 +29,82 @@
       <br>
     </div>
 
-    <table class="table table-striped" ng-repeat="uno in informeReparto.informe | filter:busqueda">
-      <td nowrap class="titulo" colspan="4">
-        <h4>Reparto</h4>
+    <table class="table table-striped">
+      <td nowrap class="titulo" colspan="5">
+        <h4>INFORME DE REPARTO POR ZONA</h4>
       <tr>
-        <th>Reparto: {{uno.reparto}}</th>
-        <th>Cliente: {{uno.cliente}}</th>
-        <th colspan="2">Nombre: {{uno.nombre}}</th>
+        <th>Totales por tipo de documento</th>
+        <th colspan="4"></th>
       </tr>
       <tr>
-        <th colspan="4">Dirección: {{uno.direccion}}</th>
-      </tr>
-      <tr>
-        <th>Pedido No.: {{uno.pedidon}}</th>
-        <th>Preventa: {{uno.Preventa}}</th>
-        <th colspan="2">Comentarios: {{uno.comentario}}</th>
-      </tr>
-
-      <td nowrap class="titulo" colspan="4">
-        <h4>Producto</h4></td>
-
-      <tr>
-        <th>Producto</th>
-        <th>UM</th>
-        <th>Cantidad</th>
+        <th>Tipo</th>
+        <th>#doctos</th>
         <th>Importe</th>
+        <th colspan="2"></th>
       </tr>
-      <tr ng-repeat="dos in uno.producto">
-        <td>{{dos.prod}}</td>
-        <td>{{dos.um}}</td>
-        <td>{{dos.cantidad}}</td>
-        <td>{{dos.importe}}</td>
+      <tr>
+        <th>Pedido</th>
+        <th>{{}}</th>
+        <th>{{ | currency}}</th>
+        <th colspan="2"></th>
       </tr>
-
-      <td nowrap class="titulo" colspan="4">
+      <tr>
+        <th>Devols</th>
+        <th>{{}}</th>
+        <th>{{ | currency}}</th>
+        <th colspan="2"></th>
+      </tr>
+      <td></td>
+      <tr>
+        <th>Totales por tipo de preventa</th>
+        <th colspan="4"></th>
+      </tr>
+      <tr>
+        <th>Preventa</th>
+        <th>#doctos</th>
+        <th>#clientes</th>
+        <th>Importe</th>
+        <th colspan="1"></th>
+      </tr>
+      <tr>
+        <th>{{}}</th>
+        <th>{{}}</th>
+        <th>{{}}</th>
+        <th>{{}}</th>
+        <th colspan="1"></th>
+      </tr>
+      <tr>
+        <th>{{}}</th>
+        <th>{{}}</th>
+        <th>{{}}</th>
+        <th>{{}}</th>
+        <th colspan="1"></th>
+      </tr>
+      <tr>
+        <th></th>
+        <th>{{1}}</th>
+        <th>{{1}}</th>
+        <th>{{ | currency}}</th>
+        <th colspan="1"></th>
+      </tr>
       <tr>
         <th>TOTAL</th>
-        <th>CJ: {{uno.totalcj}}</th>
-        <th>UN: {{uno.un}}</th>
-        <th colspan="2">Total: {{uno.total | currency}}</th>
+        <th>{{}}</th>
+        <th>{{}}</th>
+        <th>{{ | currency}}</th>
       </tr>
-
-      <td nowrap class="new" colspan="4">
-        <h4></h4></td>
+      <td></td>
+      <tr>
+        <th>Totales del viaje: {{}}</th>
+        <th colspan="4"></th>
+      </tr>
+      <tr>
+        <th colspan="2">Producto</th>
+        <th>Checkout</th>
+        <th>Asig. Pedidos</th>
+        <th>Extra</th>
+      </tr>
+        
 
     </table>
 
